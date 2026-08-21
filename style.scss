@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+
+	#resultado1 {
+		animation: girando 1s ease;
+		position: fixed;
+		z-index: 3;
+		font-size: 30px;
+		color: white;
+	}
+
+	#resultado2 {
+		animation: girando 1s ease;
+		position: fixed;
+		z-index: 3;
+		font-size: 30px;
+		color: hotpink;
+		font-family: cursive;
+	}
+
+	h4 {
+		font-size: 2vw;
+	}
+	h1 {
+		font-size: 5vw;
+	}
+
+	div {
+		width: 50%;
+		height: 150px;
+		display: grid;
+		justify-content: center;
+		gap: 10px;
+
+		button {
+			width: 90px;
+			font-size: 1.5em;
+		}
+
+		#aceitar {
+			background: green;
+			color: white;
+			border-color: green;
+		}
+
+		#negar {
+			background: red;
+			color: white;
+			border-color: darkred;
+		}
+	}
+
+	#result {
+		width: 100vw;
+		position: fixed;
+		animation: entrada 1s ease;
+	}
+}
+
+@keyframes entrada {
+	0% { margin-left: -1000px;}
+	100% {margin-left: 0px;}
+}
+
+@keyframes girando {
+	0% { transform: rotate(-100deg); opacity: 0.0 }
+	100% { transform:rotate(0deg); opacity: 1.0}
+}
