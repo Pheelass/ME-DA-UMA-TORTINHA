@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 0.1fr 1fr;
+  background: #180C21;
+}
+
+header, main {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (width < 1000px) {
+  header, main {
+    width: 100%;
+  }
+}
+
+header {
+  background: #00061E;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0.7em;
+  padding-left: 20px;
+  gap: 10px;
+  position: relative;
+}
+header #whatszap_icon {
+  height: 30px;
+}
+header #WhatszapText {
+  color: white;
+  font-family: verdana;
+  font-size: 1.4em;
+}
+header #menu_icon {
+  position: absolute;
+  right: 20px;
+}
+
+main {
+  background: #4660BD;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 20px;
+  display: grid;
+  position: relative;
+  grid-auto-rows: 20px;
+}
+main #searchBox {
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background: rgb(200, 200, 200);
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+main .iconChat {
+  height: 70px;
+  box-sizing: border-box;
+  width: 100%;
+  background: rgba(40, 40, 40, 0.3);
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+main .iconChat #userProfile {
+  height: 80%;
+  border-radius: 50%;
+}
+main .iconChat #username {
+  color: white;
+  height: 100%;
+  width: 100%;
+  font-size: 1.25em;
+  font-family: arial;
+}
+main .iconChat #username p {
+  color: red;
+  font-size: 0.25em;
+}
+
+.userConfig {
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  background: #6159A8;
+  display: grid;
+  /* temporary display */
+  display: none;
+  grid-auto-rows: auto;
+  align-content: flex-start;
+  justify-items: center;
+  gap: 20px;
+  border-top: 5px solid rebeccapurple;
+  border-bottom: 5px solid rebeccapurple;
+}
+.userConfig #myProfile {
+  width: 80%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px dotted white;
+}
+.userConfig #myUsername {
+  color: #C9C4F5;
+}
+.userConfig .myUserConfig {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+.userConfig .myUserConfig .userSelfConfig {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  font-size: 1em;
+  font-family: sans-serif;
+}
+.userConfig {
+  /*
+  Foto do usuario: myProfile		|		Nome do usuario: myUsername,
+  Classe do editor: myUserConfig	| 		Classe dos editores do botao: userSelfConfig,
+  */
+}
+
+/*# sourceMappingURL=main.css.map */
