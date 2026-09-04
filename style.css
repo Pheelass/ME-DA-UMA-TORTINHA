@@ -23,14 +23,25 @@ header, main {
 header {
   background: #00061E;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   font-size: 0.7em;
-  gap: 20px;
+  padding-left: 20px;
+  gap: 10px;
+  position: relative;
 }
 header #whatszap_icon {
-  height: 40px;
+  height: 30px;
+}
+header #WhatszapText {
+  color: white;
+  font-family: verdana;
+  font-size: 1.4em;
+}
+header #menu_icon {
+  position: absolute;
+  right: 20px;
 }
 
 main {
@@ -39,6 +50,17 @@ main {
   padding: 10px;
   gap: 20px;
   display: grid;
+  position: relative;
+  grid-auto-rows: 20px;
+}
+main #searchBox {
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background: rgb(200, 200, 200);
+  outline: none;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 main .iconChat {
   height: 70px;
