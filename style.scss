@@ -1,79 +1,66 @@
 * {
-	padding: 0;
-	margin: 0;
+	margin: 0; padding: 0;
 }
 
 body {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: 0.10fr 1fr;
+	background: #180C21;
+}
+
+header, main {
+	width: 70%;
+	margin: 0 auto;
+	@media (width < 1000px) {
+		width: 100%;
+	}
+}
+
+header {
+	background: #00061E;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 100vw;
-	height: 100vh;
-	text-align: center;
+	box-sizing: border-box;
+	font-size: 0.7em;
+	gap: 20px;
 
-	#resultado1 {
-		animation: girando 1s ease;
-		position: fixed;
-		z-index: 3;
-		font-size: 30px;
-		color: white;
+	#whatszap_icon {
+		height: 40px;
 	}
+}
 
-	#resultado2 {
-		animation: girando 1s ease;
-		position: fixed;
-		z-index: 3;
-		font-size: 30px;
-		color: hotpink;
-		font-family: cursive;
-	}
+main {
+	background: #4660BD;
+	box-sizing: border-box;
+	padding: 10px;
+	gap: 20px;
+	display: grid;
 
-	h4 {
-		font-size: 2vw;
-	}
-	h1 {
-		font-size: 5vw;
-	}
-
-	div {
-		width: 50%;
-		height: 150px;
-		display: grid;
-		justify-content: center;
+	.iconChat {
+		height: 70px;
+		box-sizing: border-box;
+		width: 95%;
+		background: rgb(40, 40, 40, 0.3);
+		padding: 5px;
+		display: flex;
 		gap: 10px;
+		padding-left: 20px;
+		align-items: center;
 
-		button {
-			width: 90px;
-			font-size: 1.5em;
+		#userProfile {
+			height: 80%;
+			border-radius: 50%;
 		}
 
-		#aceitar {
-			background: green;
+		#username {
 			color: white;
-			border-color: green;
-		}
 
-		#negar {
-			background: red;
-			color: white;
-			border-color: darkred;
+			p {
+				color: red;
+				font-size: 0.25em;
+			}
 		}
 	}
-
-	#result {
-		width: 100vw;
-		position: fixed;
-		animation: entrada 1s ease;
-	}
-}
-
-@keyframes entrada {
-	0% { margin-left: -1000px;}
-	100% {margin-left: 0px;}
-}
-
-@keyframes girando {
-	0% { transform: rotate(-100deg); opacity: 0.0 }
-	100% { transform:rotate(0deg); opacity: 1.0}
 }

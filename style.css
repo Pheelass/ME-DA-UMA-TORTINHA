@@ -1,82 +1,66 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-}
-body #resultado1 {
-  animation: girando 1s ease;
-  position: fixed;
-  z-index: 3;
-  font-size: 30px;
-  color: white;
-}
-body #resultado2 {
-  animation: girando 1s ease;
-  position: fixed;
-  z-index: 3;
-  font-size: 30px;
-  color: hotpink;
-  font-family: cursive;
-}
-body h4 {
-  font-size: 2vw;
-}
-body h1 {
-  font-size: 5vw;
-}
-body div {
-  width: 50%;
-  height: 150px;
   display: grid;
-  justify-content: center;
-  gap: 10px;
-}
-body div button {
-  width: 90px;
-  font-size: 1.5em;
-}
-body div #aceitar {
-  background: green;
-  color: white;
-  border-color: green;
-}
-body div #negar {
-  background: red;
-  color: white;
-  border-color: darkred;
-}
-body #result {
-  width: 100vw;
-  position: fixed;
-  animation: entrada 1s ease;
+  height: 100vh;
+  grid-template-rows: 0.1fr 1fr;
+  background: #180C21;
 }
 
-@keyframes entrada {
-  0% {
-    margin-left: -1000px;
-  }
-  100% {
-    margin-left: 0px;
+header, main {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (width < 1000px) {
+  header, main {
+    width: 100%;
   }
 }
-@keyframes girando {
-  0% {
-    transform: rotate(-100deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
+
+header {
+  background: #00061E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 0.7em;
+  gap: 20px;
+}
+header #whatszap_icon {
+  height: 40px;
+}
+
+main {
+  background: #4660BD;
+  box-sizing: border-box;
+  padding: 10px;
+  gap: 20px;
+  display: grid;
+}
+main .iconChat {
+  height: 70px;
+  box-sizing: border-box;
+  width: 95%;
+  background: rgba(40, 40, 40, 0.3);
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+  align-items: center;
+}
+main .iconChat #userProfile {
+  height: 80%;
+  border-radius: 50%;
+}
+main .iconChat #username {
+  color: white;
+}
+main .iconChat #username p {
+  color: red;
+  font-size: 0.25em;
 }
 
 /*# sourceMappingURL=style.css.map */
