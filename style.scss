@@ -41,11 +41,11 @@ main {
 	.iconChat {
 		height: 70px;
 		box-sizing: border-box;
-		width: 95%;
+		width: 100%;
 		background: rgb(40, 40, 40, 0.3);
 		padding: 5px;
 		display: flex;
-		gap: 10px;
+		gap: 20px;
 		padding-left: 20px;
 		align-items: center;
 
@@ -56,6 +56,10 @@ main {
 
 		#username {
 			color: white;
+			height: 100%;
+			width: 100%;
+			font-size: 1.25em;
+			font-family: arial;
 
 			p {
 				color: red;
