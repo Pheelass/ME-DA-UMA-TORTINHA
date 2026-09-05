@@ -11,7 +11,7 @@ const port = 3000;
 app.use(express.static(path.join(__dirname + '/src/')))
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/main.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port, () => {
