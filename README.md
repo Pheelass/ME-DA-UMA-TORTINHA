@@ -4,4 +4,8 @@ Este repositório (público) é um site inspirado no WhatsApp que se originou de
 ## como acessar o site 
 Caso se interesse pelo meu trabalho, pode-se acessar o https://pheelass.github.io/ME-DA-UMA-TORTINHA/ para interagir com o site ou podem acessar meus outros repositórios 
 
+**dados do site:**
+Versão: 1.0.0 - 4 de set, 2026
+
+
 _Meu nome é João Felipe e sou um dev sonhador._
