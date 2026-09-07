@@ -12,7 +12,7 @@ body {
 header, main {
 	width: 70%;
 	margin: 0 auto;
-	@media (width < 1000px) {
+	@media (width < 1050px) {
 		width: 100%;
 	}
 }
@@ -27,21 +27,25 @@ header {
 	padding-left: 20px;
 	gap: 10px;
 	position: relative;
+	user-select: none;
 
 
 	#whatszap_icon {
 		height: 30px;
+
 	}
 
 	#WhatszapText {
 		color: white;
 		font-family: verdana;
 		font-size: 1.4em;
+		cursor: none;
 	}
 
 	#menu_icon {
 		position: absolute;
 		right: 20px;
+		cursor: pointer;
 	}
 }
 
@@ -74,6 +78,8 @@ main {
 		gap: 20px;
 		padding-left: 20px;
 		align-items: center;
+		cursor: pointer;
+		user-select: none;
 
 		#userProfile {
 			height: 80%;
@@ -110,26 +116,39 @@ footer {
 	width: 100%;
 	background: #00061E;
 	display: flex;
-	align-content: center;
-	justify-items: center;
+	justify-content: center;
+	user-select: none;
 
-	.fotter-icons {
-		display: flex;
-		flex-direction: column;
-		color: white;
-		font-family: serif;
-		width: 100%;
-		align-items: center;
+	nav {
 		justify-content: center;
-		gap: 5px;
+		display: flex;
+		width: 100%;
+		gap: 10px;
+
+		.fotter-icons {
+			display: flex;
+			flex-direction: column;
+			color: white;
+			font-family: serif;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+			gap: 5px;
+			cursor: pointer;
+
+			&:hover {
+				background: #010B30;
+				transition: 0.1s ease;
+			}
 
 
-		img {
-			margin: 0 auto;
-			height: 30%;
+			img {
+				margin: 0 auto;
+				height: 30%;
+			}
 		}
-
 	}
+
 }
 
 
@@ -150,6 +169,13 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
+
+	&:hover {
+		background: #010B30;
+		transition: 0.1s ease;
+		user-select: none;
+		cursor: pointer;
+	}
 }
 
 // config user profile <deprecated>
